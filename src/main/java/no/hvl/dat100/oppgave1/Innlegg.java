@@ -7,30 +7,41 @@ public abstract class Innlegg {
 	// TODO - deklarering av objektvariable
 	
 	public Innlegg() {
-		
+
+        public int id = 0000;
+        public String bruker = "NAN";
+        public String dato = "00-00";
+        public int likes = 0000;
+
 	}
 	
 	public Innlegg(int id, String bruker, String dato) {
 
-		// TODO 
-		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
+        this.id = id;
+        this.bruker = bruker;
+        this.dato = dato;
+
 	}
 
 	public Innlegg(int id, String bruker, String dato, int likes) {
 
-		// TODO - START
-		
-		throw new UnsupportedOperationException(TODO.constructor("Innlegg"));
-	}
+        this.id = id;
+        this.bruker = bruker;
+        this.dato = dato;
+        this.likes= likes;
+
+    }
 	
 	public String getBruker() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return this.bruker;
 
 	}
 
 	public void setBruker(String bruker) {
-		throw new UnsupportedOperationException(TODO.method());
+		this.bruker = bruker;
+
+
 	}
 
 	public String getDato() {
