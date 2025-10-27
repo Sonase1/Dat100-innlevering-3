@@ -43,7 +43,7 @@ public abstract class Innlegg {
 	}
 
 	public String getDato() {
-		return this.bruker;
+		return this.dato;
 		
 	}
 
@@ -67,7 +67,7 @@ public abstract class Innlegg {
 	
 	public void doLike () {
 
-        this.like += 1;
+        this.likes += 1;
 
 	}
 	
@@ -79,7 +79,7 @@ public abstract class Innlegg {
 	@Override
 	public String toString() {
 
-        return id + "\n" + bruker + "\n" + dato + "\n" + likes "\n";
+        return id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n";
 	}
 	
 	/* Metoden nedenfor er kun for valgfri oppgave 6
