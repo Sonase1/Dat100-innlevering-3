@@ -3,15 +3,13 @@ package no.hvl.dat100.oppgave1;
 import no.hvl.dat100.common.TODO;
 
 public abstract class Innlegg {
-	
-	// TODO - deklarering av objektvariable
+
+    private int id = 0000;
+    private String bruker = "NAN";
+    private String dato = "00-00";
+    private int likes = 0000;
 	
 	public Innlegg() {
-
-        public int id = 0000;
-        public String bruker = "NAN";
-        public String dato = "00-00";
-        public int likes = 0000;
 
 	}
 	
@@ -39,50 +37,55 @@ public abstract class Innlegg {
 	}
 
 	public void setBruker(String bruker) {
-		this.bruker = bruker;
 
+		this.bruker = bruker;
 
 	}
 
 	public String getDato() {
-		throw new UnsupportedOperationException(TODO.method());
+		return this.bruker;
 		
 	}
 
 	public void setDato(String dato) {
-		throw new UnsupportedOperationException(TODO.method());
+
+        this.dato = dato;
+
 	}
 
 	public int getId() {
-		throw new UnsupportedOperationException(TODO.method());
+
+        return this.id;
 
 	}
 
 	public int getLikes() {
-		throw new UnsupportedOperationException(TODO.method());
+
+        return this.likes;
 
 	}
 	
 	public void doLike () {
-		throw new UnsupportedOperationException(TODO.method());
+
+        this.like += 1;
+
 	}
 	
 	public boolean erLik(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
 
+        return this.id == innlegg.getId();
 	}
 	
 	@Override
 	public String toString() {
-		
-		throw new UnsupportedOperationException(TODO.method());
-				
+
+        return id + "\n" + bruker + "\n" + dato + "\n" + likes "\n";
 	}
 	
-	// Metoden nedenfor er kun for valgfri oppgave 6
+	/* Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 		
 		throw new UnsupportedOperationException(TODO.method());
 				
-	}
+	} */
 }
