@@ -5,7 +5,7 @@ import no.hvl.dat100.oppgave1.*;
 
 public class Tekst extends Innlegg {
 
-    private String tekst = "nan";
+    private String tekst;
 
 	
 	public Tekst () {

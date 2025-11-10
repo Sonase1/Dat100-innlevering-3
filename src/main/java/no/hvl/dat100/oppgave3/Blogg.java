@@ -39,7 +39,7 @@ public class Blogg {
 
 		for (int i = 0; i<nesteledig; i++){
             if (innleggtabell[i].erLik(innlegg)){
-                return innleggtabell[i].getId();
+                return i;
             }
         }
         return -1;
