@@ -99,7 +99,7 @@ public class Blogg {
 
 	}
 
-	// valgfrie oppgaver nedenfor
+	/* valgfrie oppgaver nedenfor
 	
 	public void utvid() {
 
@@ -121,5 +121,5 @@ public class Blogg {
 		
 		throw new UnsupportedOperationException(TODO.method());
 
-	}
+	}*/
 }
