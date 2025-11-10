@@ -6,7 +6,7 @@ public abstract class Innlegg {
 
     private int id;
     private String bruker;
-    private String dato";
+    private String dato;
     private int likes;
 	
 	public Innlegg() {
